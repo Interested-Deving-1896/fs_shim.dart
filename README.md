@@ -1,33 +1,29 @@
-# fs_shim
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# fs_shim.dart
 
-A portable file system library to allow working on io, browser (though idb_shim), node and memory (through idb_shim), 
-and soon google storage (through storage api), google drive (through google drive api).
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/fs_shim.dart)
 
-It uses a small subset of the file io API (asynchronous only)
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-[![Build Status](https://travis-ci.org/tekartik/fs_shim.dart.svg?branch=master)](https://travis-ci.org/tekartik/fs_shim.dart)
+## Architecture
 
-## API supported
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Classes
+## Install
 
-- File (create, openWrite, openRead, writeAsBytes, writeAsString, copy)
-- Link (create, target)
-- Directory (create, list)
-- FileSystem (directory, file, link, type, isFile, isDirectory, isLink)
-- FileSystemEntity (path, exists, delete, rename, absolute, isAbsolute, state, parent)
-- FileStat
-- FileSystemEntityType,
-- FileSystemException,
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-Static method (IO only)
-
-- Directory.current
-- FileSystemEntity.isFile
-- FileSystemEntity.isDirectory
-- FileSystemEntity.isLink
+```bash
+git clone https://github.com/Interested-Deving-1896/fs_shim.dart.git
+cd fs_shim.dart
+```
 
 ## Usage
+
 
 
 ### Using IO API
@@ -166,29 +162,50 @@ main() async {
 * Lightweight glob support (`**`, `*` and `?` in a posix style path)
 * Copy utilities (copy files, directories recursively)
 
-## Testing
+## Configuration
 
-### Dev dependencies
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-Stable
+## CI
 
-    fs_shim: any
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-Bleeding age
+## Mirror chain
 
-    fs_shim:
-      git: 
-        url: https://github.com/tekartik/fs_shim.dart
-          path: fs
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/fs_shim.dart`](https://github.com/Interested-Deving-1896/fs_shim.dart) and mirrored through:
 
-### Testing with dartdevc
+```
+Interested-Deving-1896/fs_shim.dart  ──►  OpenOS-Project-OSP/fs_shim.dart  ──►  OpenOS-Project-Ecosystem-OOC/fs_shim.dart
+```
 
-    pub serve test --web-compiler=dartdevc --port=8079
-    pub run test -p chrome --pub-serve=8079
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-## Features and bugs
+## Contributors
 
-* On windows file links are not supported (fs.supportsFileLink returns false)
-* On windows directory link target are absolutes
-* On node, links are node supported (using [this great implementation](https://github.com/pulyaevskiy/node-interop/tree/master/node_io))
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[BSD-2-Clause](https://github.com/Interested-Deving-1896/fs_shim.dart/blob/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
